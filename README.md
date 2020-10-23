@@ -28,25 +28,3 @@ curl -X GET --header 'Accept: application/json' --header 'Authorization: xxx.xxx
 Build Frontend (optional step)
 Code for frontend is allready compiled and saved under the webui/dist when building the backend app (using maven) it will pickup the code from webui/dist. However if you modified the frontend code and want your changes to get reflected then you must build the frontend
 
-
-# Gradle Build : Navigate to the root folder where build.gradle is present 
-gradle build
-Start the API and WebUI server
-
-
-# If you build with maven jar location will be 
-java -jar ./target/app-1.0.0.jar
-
-
-# If you build with gradle jar location will be 
-java -jar ./build/libs/app-1.0.0.jar
-Accessing Application
-Cpmponent	URL	Credentials
-Frontend	http://localhost:9119	demo/demo
-H2 Database	http://localhost:9119/h2-console	Driver:org.h2.Driver
-JDBC URL:jdbc:h2:mem:demo
-User Name:sa
-Swagger (API Ref)	http://localhost:9119/swagger-ui.html	
-Redoc (API Ref)	http://localhost:9119/redoc/index.html	
-Swagger Spec	http://localhost:9119/api-docs	
-
